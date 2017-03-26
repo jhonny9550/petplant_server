@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 app.get('/', cors(), api.test);
 app.get('/get_user/:id', cors(), api.get_user);
-app.get('/get_plant/:id'), cors(); api.get_plant);
+app.get('/get_plant/:id'), cors(), api.get_plant);
 app.get('/get_plants_by_user/:id', cors(), api.get_plants_by_user);
 app.get('/get_users', cors(), api.get_users);
 
